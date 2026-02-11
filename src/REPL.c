@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "input_buffer.h"
-#include "code_generator.h"
+#include "frontend.h"
 void print_prompt(void) {
     printf("db > ");
 }

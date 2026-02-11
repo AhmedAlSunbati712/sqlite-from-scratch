@@ -1,7 +1,8 @@
-#ifndef CODE_GENERATOR_H
-#define CODE_GENERATOR_H
+#ifndef FRONTEND_H
+#define FRONTEND_H
 
 #include "input_buffer.h"
+#include "table.h"
 typedef enum {
     EXIT
 } MetaCommandType;
@@ -23,6 +24,7 @@ typedef enum {
 
 typedef struct {
     StatementType type;
+    Row row_to_insert;
 } Statement;
 
 typedef enum {
