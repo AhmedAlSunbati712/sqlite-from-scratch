@@ -30,8 +30,8 @@ typedef enum {
     STATEMENT_UNRECOGNIZED_COMMAND
 } StatementResult;
 
-MetaCommandType extract_meta_command_type(InputBuffer* input_buffer);
-MetaCommandResult execute_meta_command(InputBuffer* input_buffer);
+MetaCommandType extract_meta_command_type(InputBuffer* input_buffer, MetaCommand* meta_command);
+MetaCommandResult execute_meta_command(MetaCommand* meta_command);
 StatementType extract_statement_type(InputBuffer* input_buffer, Statement* statement);
 StatementResult execute_statement(Statement* statement);
 
